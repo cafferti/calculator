@@ -1,232 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-<script src="index.js" defer ></script>
-<link rel="stylesheet" href="index.css">
-  <title>Frontend Mentor | Easybank landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <link rel="stylesheet" href="./calc.css">
+  <title>Simple Calculator</title>
+  
 </head>
 <body>
-
-<div>
-<header>
-  <div class="class">
-     <nav class="navbar navbar-expand-lg ">
-       <div class="container px-0 py-0">
-         <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
-         <button onclick="active()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="navbarNav">
-           <ul class="navbar-nav">
-             <li class="nav-item">
-               <a class="nav-link " aria-current="page" href="#">Home</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="#">About</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="#">Contact</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link">Blog</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link">Careers</a>
-             </li>
-             <div>
-             </div>
-           </ul>
-         </div>
-    
-               <a class="nav-link greeny">Request Invite</a>
-             
-       </div>
-     </nav>
-    </div>
-</header>
-
-  <main>
-    <div class="container parent px-0">
-
-    <section class="intro">
-
-      <div class="head-image">
-       <img id="phone" class="intro-image container" src="images/image-mockups.png" alt="none">
-       </div>  
-
-        <div id="bgfade" class="container intro-desktop ">
-          <h1 id="nextG">Next generation digital banking</h1> 
-
-          <p>Take your financial life online. Your Easybank account will be a one-stop-shop 
-             for spending, saving, budgeting, investing, and much more.
-          </p>
-          <div class="intro-btn">
-               <a  href="#"> Request Invite</a>
-           </div>
-
-       </div>
-
-    </section>
-  </div>
-      
-    
-
-
-     <section class="artic-link">
-      <div class="container">
-           <h2> Why choose Easybank?</h2>
-
-            
-               <p>We leverage Open Banking to turn your bank account into your financial hub. Control 
-                   your finances like never before.
-               </p> 
-            
-            <div class="cards">
-            <article>
-               <img src="images/icon-online.svg" alt="">
-                 <h3>Online Banking</h3>
-               <p> Our modern web and mobile applications allow you to keep track of your finances 
-                     wherever you are in the world.
-               </p>
-            </article>
-
-            <article>
-               <img src="images/icon-budgeting.svg" alt="">
-               <h3>Simple Budgeting</h3>
-               <p>See exactly where your money goes each month. Receive notifications when you’re 
-                  close to hitting your limits.
-               </p> 
-           </article>
-
-           <article>
-                <img src="images/icon-onboarding.svg" alt="">
-               <h3>Fast Onboarding</h3>
-               <p>We don&apos;t do branches. Open your account in minutes online and start taking control 
-                 of your finances right away.
-               </p>
-           </article>
-           
-           <article>
-              <img src="images/icon-api.svg" alt="">
-               <h3>Open API</h>  
-               <p class="outcast"> Manage your savings, investments, pension, and much more from one account. Tracking 
-               your money has never been easier.
-              </p>
-        </article>
-      </div>
-    </div>
-      </section>
-
-  <section class="biographs">
-     <div class="bio container">
-        <h2>Latest Articles</h2> 
-        <div class="graph">
-     <article>
-        <img src="images/image-currency.jpg" alt="">
-        <div class="article-text">
-        <span>By Claire Robinson</span> 
-        <h3>Receive money in any currency with no fees</h3>
-        <p>
-        The world is getting smaller and we&apos;re becoming more mobile. So why should you be 
-        forced to only receive money in a single …
-        </p>
-        <div>
-     </article>
-     <article>
-        <img src="images/image-restaurant.jpg" alt="">
-        <div class="article-text">
-        <span> By Wilson Hutton</span>
-        <h3>Treat yourself without worrying about money</h3>
-        <p>Our simple budgeting feature allows you to separate out your spending and set 
-           realistic limits each month. That means you …
-        </p> 
-        <div>
-      </article> 
-       <article>
-        <img src="images/image-plane.jpg" alt="">
-        <div class="article-text">
-        <span>By Wilson Hutton</span>
-        <h3>Take your Easybank card wherever you go</h3>
-        <p> We want you to enjoy your travels. This is why we don&apos;t charge any fees on purchases 
-            while you&apos;re abroad. We&apos;ll even show you …
-        </p>
-        <div>
-      </article>
-     <article>
-      <img src="images/image-confetti.jpg" alt="">
-      <div class="article-text">
-        <span>By Claire Robinson </span>
-        <h3> Our invite-only Beta accounts are now live!</h3>
-        <p> After a lot of hard work by the whole team, we&apos;re excited to launch our closed beta. 
-        It&apos;s easy to request an invite through the site ...
-        </p>
-      </article>
-    </div>
-        </div>
-      </section>
-</main>
-
-<footer class="secondary ">
-
-  <div class="inline container">
-
-      <nav>
-
-         <section class="adverts">
-           <img src="images/background logo.svg" alt="">
-
-           <ul class="socials">
-             <li> <a href=""><i class="fa-brands fa-square-facebook fa-xl"></i></a></li>
-             <li><a href=""><i class="fa-brands fa-youtube fa-xl"></i></a></li>
-             <li><a href=""><i class="fa-brands fa-twitter fa-xl"></i></a></li>
-             <li><a href=""><i class="fa-brands fa-pinterest fa-xl"></i></a></li> 
-             <li><a href=""><i class="fa-brands fa-instagram fa-xl"></i></a></li> 
-           </ul>
-
-         </section>
-
-        <section class="two-links">
-            <ul class="link-list">
-             <li><a href="#">About Us</a></li> 
-             <li><a href="#">Contact</a></li> 
-             <li><a href="#">Blog</a></li>
-            </ul>
-
-             <ul class="link-list">
-              <li><a href="#">Careers</a></li> 
-              <li><a href="#">Support</a></li> 
-              <li><a href="#">Privacy Policy</a></li> 
-             </ul>
-        </section>
-      </nav>
-      <section class="footer-foot">
-        <a href="#"> Request Invite</a>
-
-        <p>© Easybank. All Rights Reserved</p> 
-      </section>
-  
-         <!-- <div class="attribution">
-           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-           Coded by <a href="#">Your Name Here</a>.
-         </div> -->
+  <div class="calculator">
+    <div class="result-display" id="resultDisplay"></div>
+    <input type="text" id="operationDisplay" readonly>
+    <input type="button" value="7" onclick="addToResult('7')">
+    <input type="button" value="8" onclick="addToResult('8')">
+    <input type="button" value="9" onclick="addToResult('9')">
+    <input type="button" value="+" onclick="addToResult('+')">
+    <input type="button" value="4" onclick="addToResult('4')">
+    <input type="button" value="5" onclick="addToResult('5')">
+    <input type="button" value="6" onclick="addToResult('6')">
+    <input type="button" value="-" onclick="addToResult('-')">
+    <input type="button" value="1" onclick="addToResult('1')">
+    <input type="button" value="2" onclick="addToResult('2')">
+    <input type="button" value="3" onclick="addToResult('3')">
+    <input type="button" value="*" onclick="addToResult('*')">
+    <input type="button" value="0" onclick="addToResult('0')">
+    <input type="button" value="." onclick="addToResult('.')">
+    <input type="button" value="/" onclick="addToResult('/')">
+    <input type="button" value="=" onclick="calculateResult()">
+    <input type="button" value="Clear" onclick="clearCalculator()">
   </div>
 
-</footer>
-<script src="https://kit.fontawesome.com/5651f5b2dd.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="./calc.js"></script>
 </body>
 </html>
